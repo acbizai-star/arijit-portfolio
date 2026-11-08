@@ -2,8 +2,9 @@
 
 Personal site of **Arijit Chakraborty** — operations & strategy leader.
 
-A single, self-contained static page (`index.html`) — no build step, no
-dependencies, no external assets. Design and copy authored with Claude.
+Two self-contained static pages: `index.html` (home) and `case-studies.html`
+(five case studies, each with a free playbook by email). No build step, no
+dependencies. Design and copy authored with Claude.
 
 ## Deploy
 

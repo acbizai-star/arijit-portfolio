@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case studies | Arijit Chakraborty</title>
+<meta name="description" content="Five operating cases from Amazon, Swiggy, Simpl, Shadowfax and AI finance tools. Each gives the result, the problem and the approach in outline. Full playbooks by email.">
+<link rel="canonical" href="https://acbizai-star.github.io/arijit-portfolio/case-studies.html">
+<meta name="theme-color" content="#0E1118">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Arijit Chakraborty">
+<meta property="og:title" content="Quality from 96% to 99% by changing the audit sample, and four more cases">
+<meta property="og:description" content="Five operating cases. Each gives the result, the problem and the approach in outline. Full playbooks by email.">
+<meta property="og:url" content="https://acbizai-star.github.io/arijit-portfolio/case-studies.html">
+<meta property="og:image" content="https://acbizai-star.github.io/arijit-portfolio/og-image-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="Arijit Chakraborty: Operations, run with AI.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ArijitC629">
+<meta name="twitter:title" content="Quality from 96% to 99% by changing the audit sample, and four more cases">
+<meta name="twitter:description" content="Five operating cases. Each gives the result, the problem and the approach in outline. Full playbooks by email.">
+<meta name="twitter:image" content="https://acbizai-star.github.io/arijit-portfolio/og-image-v2.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#14181F; --ink-soft:#525A55; --paper:#F2F5F0; --surface:#FFFFFF;
+    --line:#D6DED3; --brass:#9C6F26; --brass-ink:#6F4F1B; --brass-soft:#EFE3C8;
+    --shadow: 0 1px 2px rgba(20,24,25,.05), 0 12px 32px -16px rgba(20,24,25,.18);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#EAEDE8; --ink-soft:#9AA39B; --paper:#0E1118; --surface:#161C17;
+      --line:#28312A; --brass:#D9A854; --brass-ink:#F0C878; --brass-soft:#2E2413;
+      --shadow: 0 1px 2px rgba(0,0,0,.35), 0 12px 32px -16px rgba(0,0,0,.6);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#EAEDE8; --ink-soft:#9AA39B; --paper:#0E1118; --surface:#161C17;
+    --line:#28312A; --brass:#D9A854; --brass-ink:#F0C878; --brass-soft:#2E2413;
+    --shadow: 0 1px 2px rgba(0,0,0,.35), 0 12px 32px -16px rgba(0,0,0,.6);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0; color:var(--ink); background:var(--paper); font-family:'Archivo',system-ui,sans-serif; font-size:16px; line-height:1.6;}
+  a{color:inherit;}
+  .col{max-width:760px; margin:0 auto; padding:0 16px;}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brass); outline-offset:3px; border-radius:2px;}
+  .skip-link{position:absolute; left:-9999px; top:0; z-index:20; background:var(--ink); color:var(--paper); padding:10px 16px; font-family:'IBM Plex Mono',monospace; font-size:12px; text-decoration:none;}
+  .skip-link:focus{left:0;}
+
+  nav{padding:20px 0 0;}
+  nav .col{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:10px;}
+  .wordmark{font-family:'Fraunces',serif; font-weight:600; font-size:18px; text-decoration:none;}
+  .navlinks{display:flex; gap:10px 18px; flex-wrap:wrap; font-family:'IBM Plex Mono',monospace; font-size:12.5px;}
+  .navlinks a{text-decoration:none; color:var(--ink-soft); border-bottom:1px solid transparent;}
+  .navlinks a:hover, .navlinks a[aria-current]{color:var(--ink); border-color:var(--brass);}
+
+  header.top{padding:48px 0 30px; border-bottom:3px double var(--line);}
+  .eyebrow{font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--brass-ink);}
+  h1{font-family:'Fraunces',serif; font-weight:600; font-size:clamp(30px,5vw,44px); line-height:1.08; letter-spacing:-.01em; margin:12px 0 14px; text-wrap:balance;}
+  .lede{font-size:16.5px; color:var(--ink-soft); max-width:58ch; margin:0;}
+  .jump{display:flex; flex-wrap:wrap; gap:8px; margin:22px 0 0; padding:0; list-style:none;}
+  .jump a{display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:12px; padding:6px 10px; border:1px solid var(--line); border-radius:3px; text-decoration:none; background:var(--surface);}
+
+  article.case{padding:44px 0 40px; border-bottom:1px solid var(--line); scroll-margin-top:12px;}
+  .case .label{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--brass-ink);}
+  .case h2{font-family:'Fraunces',serif; font-weight:600; font-size:clamp(22px,3.4vw,28px); line-height:1.18; margin:8px 0 16px; text-wrap:balance;}
+  .result{display:flex; flex-wrap:wrap; gap:10px; margin:0 0 20px; padding:0; list-style:none;}
+  .result li{background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--brass); border-radius:4px; padding:10px 14px; font-family:'IBM Plex Mono',monospace; font-size:14px; font-weight:600; color:var(--brass-ink); font-variant-numeric:tabular-nums;}
+  .case h3{font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-soft); margin:18px 0 4px;}
+  .case p{margin:0 0 6px; max-width:62ch;}
+  .tomorrow{margin:20px 0 0; padding:14px 16px; background:var(--brass-soft); border-radius:4px; font-size:15px; max-width:62ch;}
+  .tomorrow b{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--brass-ink); display:block; margin-bottom:4px; font-weight:600;}
+  .more{font-size:14.5px; margin-top:12px;}
+  .more a{text-decoration-color:var(--brass);}
+
+  .playbook{margin:24px 0 0; border:1px dashed var(--brass); border-radius:6px; background:var(--surface); padding:18px 18px 16px; max-width:62ch;}
+  .pb-head{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:6px 14px; margin-bottom:10px;}
+  .pb-head strong{font-family:'Fraunces',serif; font-weight:600; font-size:18px;}
+  .pb-head span{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--brass-ink);}
+  .playbook ul{list-style:none; margin:0 0 14px; padding:0;}
+  .playbook li{position:relative; padding:7px 0 7px 26px; border-top:1px solid var(--line); font-size:14.5px; color:var(--ink-soft);}
+  .playbook li::before{content:""; position:absolute; left:2px; top:12px; width:12px; height:9px; border:1.5px solid var(--brass); border-radius:2px;}
+  .playbook li::after{content:""; position:absolute; left:4.5px; top:6px; width:7px; height:7px; border:1.5px solid var(--brass); border-bottom:0; border-radius:4px 4px 0 0;}
+  .btn{display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:13px; padding:11px 16px; border-radius:3px; text-decoration:none; border:1px solid var(--ink); background:var(--ink); color:var(--paper);}
+  .btn.ghost{background:transparent; color:var(--ink); border-color:var(--line);}
+
+  .signup{margin:48px 0 0; padding:40px 0 44px; background:var(--brass-soft); border-top:3px double var(--line);}
+  .signup h2{font-family:'Fraunces',serif; font-weight:600; font-size:clamp(22px,3.4vw,28px); margin:10px 0 8px; text-wrap:balance;}
+  .signup p{max-width:56ch; margin:0 0 18px; color:var(--brass-ink);}
+  .signup .row{display:flex; flex-wrap:wrap; gap:10px;}
+  .signup .fine{font-size:13px; margin:14px 0 0;}
+
+  footer{padding:30px 0 50px;}
+  footer .col{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-soft);}
+  footer a{text-decoration-color:var(--brass);}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<nav aria-label="Primary">
+  <div class="col">
+    <a class="wordmark" href="./">Arijit Chakraborty</a>
+    <div class="navlinks">
+      <a href="./">Home</a>
+      <a href="case-studies.html" aria-current="page">Case studies</a>
+      <a href="#newsletter">Newsletter</a>
+      <a href="https://www.linkedin.com/in/arijitc629/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://x.com/ArijitC629" target="_blank" rel="noopener">X</a>
+      <a href="https://medium.com/@arijitchakraborty.srccgbo" target="_blank" rel="noopener">Medium</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+<header class="top">
+  <div class="col">
+    <span class="eyebrow">Case studies</span>
+    <h1>Quality went from 96% to 99% when we changed the audit sample.</h1>
+    <p class="lede">Four more cases follow, each with the numbers and what we changed. Each case has a playbook with the full method and the template I would use to run it again. Playbooks are free for now and come by email.</p>
+    <ul class="jump" aria-label="Cases on this page">
+      <li><a href="#audit-sample">01 Audit sample</a></li>
+      <li><a href="#city-launch">02 City launch</a></li>
+      <li><a href="#collections">03 Collections</a></li>
+      <li><a href="#first-mile">04 First-mile scan</a></li>
+      <li><a href="#read-back">05 AI with read-back</a></li>
+    </ul>
+  </div>
+</header>
+
+<article class="case" id="audit-sample">
+  <div class="col">
+    <span class="label">01 &middot; Quality audits &middot; Amazon &middot; 2021 to 2022</span>
+    <h2>The audit sample behind a quality score</h2>
+    <ul class="result">
+      <li>Quality 96% &rarr; 99%</li>
+      <li>Utilisation 70% &rarr; 85%</li>
+    </ul>
+    <h3>The problem</h3>
+    <p>Quality sat at 96% on a compliance operations team at Amazon. We checked how the work was sampled for audit before looking at training.</p>
+    <h3>The approach, in outline</h3>
+    <p>We changed how work was sampled for audit and redesigned the performance measures that sat on top of it. Quality went to 99%, and utilisation went from 70% to 85%.</p>
+    <div class="tomorrow"><b>Try this tomorrow</b>Pick the quality number your team watches most. Write down which work it samples, then compare that with the work your team did this week.</div>
+    <p class="more">The long version, with four more checks for peak season, is <a href="https://medium.com/@arijitchakraborty.srccgbo/the-audit-sample-that-took-quality-from-96-to-99-and-four-more-checks-for-black-friday-fba3492b9046" target="_blank" rel="noopener">on Medium</a>.</p>
+    <div class="playbook">
+      <div class="pb-head"><strong>Playbook 01: audit sample review</strong><span>Free for now &middot; by email</span></div>
+      <ul>
+        <li>Six questions to ask of any audit sample before you change anything else</li>
+        <li>A sample plan template: each work type's share of volume next to its share of the sample</li>
+        <li>How to size the sample per work type so small categories still get checked</li>
+        <li>A one-page checklist to run before anyone gets retrained</li>
+      </ul>
+      <a class="btn" href="mailto:arijitchakraborty.srccgbo@gmail.com?subject=Playbook%2001%3A%20audit%20sample%20review&amp;body=Please%20send%20me%20playbook%2001.%0A%0AMy%20role%3A%0AMy%20company%20or%20industry%3A%0A">Email me playbook 01</a>
+    </div>
+  </div>
+</article>
+
+<article class="case" id="city-launch">
+  <div class="col">
+    <span class="label">02 &middot; City launch &middot; Swiggy, a food delivery app in India &middot; 2017 to 2019</span>
+    <h2>A new city, from zero orders to 7,000 a day</h2>
+    <ul class="result">
+      <li>0 &rarr; 7,000 orders a day</li>
+      <li>900+ delivery partners</li>
+      <li>Just over 4 months</li>
+      <li>Cost per delivery &minus;20%</li>
+    </ul>
+    <h3>The problem</h3>
+    <p>Swiggy had no operation in Patna, a state capital in the east of India. The city had to go from zero orders to a working delivery network.</p>
+    <h3>The approach, in outline</h3>
+    <p>I worked out the cost design and the staffing the city needed, and ran the setup and expansion from that. Patna reached 900+ delivery partners and 7,000 orders a day in just over 4 months, and cost per delivery came down 20%.</p>
+    <div class="tomorrow"><b>Try this tomorrow</b>If you are opening a site or a city, write down the staffing you need at each order level you expect before you hire the first person.</div>
+    <div class="playbook">
+      <div class="pb-head"><strong>Playbook 02: launching a city</strong><span>Free for now &middot; by email</span></div>
+      <ul>
+        <li>A staffing model by order band: people needed per hour at each daily volume</li>
+        <li>The cost per delivery tree, split into the parts a city team can move</li>
+        <li>A week-by-week checklist for the first 16 weeks</li>
+      </ul>
+      <a class="btn" href="mailto:arijitchakraborty.srccgbo@gmail.com?subject=Playbook%2002%3A%20launching%20a%20city&amp;body=Please%20send%20me%20playbook%2002.%0A%0AMy%20role%3A%0AMy%20company%20or%20industry%3A%0A">Email me playbook 02</a>
+    </div>
+  </div>
+</article>
+
+<article class="case" id="collections">
+  <div class="col">
+    <span class="label">03 &middot; Collections &middot; Simpl, a pay-later checkout in India &middot; 2022 to 2025</span>
+    <h2>Late payments down about half while sales grew</h2>
+    <ul class="result">
+      <li>Late payments about &minus;50%</li>
+      <li>Sales (GMV) 1.5&times;</li>
+      <li>Collection cost &minus;20%</li>
+    </ul>
+    <h3>The problem</h3>
+    <p>Simpl lets shoppers buy now and pay later. Delinquency (customers paying late or not at all) had to fall while GMV, the value of sales through the product, kept growing.</p>
+    <h3>The approach, in outline</h3>
+    <p>As Operations Lead, I worked with the risk, data science and product teams on late payments. Delinquency came down about 50% while GMV grew 1.5 times. Collection cost fell 20% through a leaner team structure and process fixes.</p>
+    <div class="tomorrow"><b>Try this tomorrow</b>Split last month's change in late payments into new customers and existing customers before you decide what to fix.</div>
+    <div class="playbook">
+      <div class="pb-head"><strong>Playbook 03: collections review</strong><span>Free for now &middot; by email</span></div>
+      <ul>
+        <li>The delinquency bridge: split any month's change into customer mix, volume and recovery</li>
+        <li>A weekly collections review agenda that ends in decisions</li>
+        <li>A cost per recovered dollar template</li>
+      </ul>
+      <a class="btn" href="mailto:arijitchakraborty.srccgbo@gmail.com?subject=Playbook%2003%3A%20collections%20review&amp;body=Please%20send%20me%20playbook%2003.%0A%0AMy%20role%3A%0AMy%20company%20or%20industry%3A%0A">Email me playbook 03</a>
+    </div>
+  </div>
+</article>
+
+<article class="case" id="first-mile">
+  <div class="col">
+    <span class="label">04 &middot; First mile &middot; Shadowfax, a delivery company in India &middot; 2022</span>
+    <h2>First-mile parcel scanning, 45 times faster</h2>
+    <ul class="result">
+      <li>First-mile scanning 45&times; faster</li>
+    </ul>
+    <h3>The problem</h3>
+    <p>The first mile is where parcels are picked up from sellers and scanned into the delivery network. Any time the scan takes is multiplied by the number of parcels scanned.</p>
+    <h3>The approach, in outline</h3>
+    <p>I led the Single Scan project on the first-mile scan at Shadowfax, and the scan got 45 times faster. Playbook 04 is the timing method I use to find the next slow step.</p>
+    <div class="tomorrow"><b>Try this tomorrow</b>Time one parcel or one order through every step with a stopwatch, and fix the slowest step first.</div>
+    <div class="playbook">
+      <div class="pb-head"><strong>Playbook 04: timing one item end to end</strong><span>Free for now &middot; by email</span></div>
+      <ul>
+        <li>The stopwatch sheet for timing one item through every step</li>
+        <li>How to choose the step to fix first when several are slow</li>
+        <li>A before-and-after log that holds up in a finance review</li>
+      </ul>
+      <a class="btn" href="mailto:arijitchakraborty.srccgbo@gmail.com?subject=Playbook%2004%3A%20timing%20one%20item&amp;body=Please%20send%20me%20playbook%2004.%0A%0AMy%20role%3A%0AMy%20company%20or%20industry%3A%0A">Email me playbook 04</a>
+    </div>
+  </div>
+</article>
+
+<article class="case" id="read-back">
+  <div class="col">
+    <span class="label">05 &middot; AI for finance work &middot; my current work</span>
+    <h2>A 10-minute finance entry, now about 3 seconds</h2>
+    <ul class="result">
+      <li>About 10 min &rarr; about 3 s per document</li>
+      <li>Each entry checked after it is written</li>
+    </ul>
+    <h3>The problem</h3>
+    <p>A finance entry took about 10 minutes per document by hand. A faster version also had to prove each entry had landed correctly.</p>
+    <h3>The approach, in outline</h3>
+    <p>I built a bulk loader with Claude, an AI assistant. Every document goes through four steps: a dry run on the file, one write, a read-back from the system of record, and a field-by-field match. A mismatch is flagged and never counted as done. Claude wrote most of the code, and I wrote the rules it had to follow.</p>
+    <div class="tomorrow"><b>Try this tomorrow</b>Pick one automated write in your work and ask what it checks after it writes. If the answer is "it logs success", add a read-back.</div>
+    <div class="playbook">
+      <div class="pb-head"><strong>Playbook 05: read-back for automations</strong><span>Free for now &middot; by email</span></div>
+      <ul>
+        <li>The read-back checklist I give every automation before it touches money</li>
+        <li>The canary rule: when one failed record should stop a run of a hundred</li>
+        <li>A blocker sheet that gives every failure one owner</li>
+        <li>The plain-English rules file I hand to Claude before it writes any code</li>
+      </ul>
+      <a class="btn" href="mailto:arijitchakraborty.srccgbo@gmail.com?subject=Playbook%2005%3A%20read-back%20for%20automations&amp;body=Please%20send%20me%20playbook%2005.%0A%0AMy%20role%3A%0AMy%20company%20or%20industry%3A%0A">Email me playbook 05</a>
+    </div>
+  </div>
+</article>
+
+<section class="signup" id="newsletter" aria-labelledby="nl-title">
+  <div class="col">
+    <span class="eyebrow">Newsletter &middot; Read Back</span>
+    <h2 id="nl-title">One operating note a week, with the proof</h2>
+    <p>Each note comes from work I have run and ends with a check you can run in yours. Free, by email through Medium.</p>
+    <div class="row">
+      <a class="btn" href="https://medium.com/@arijitchakraborty.srccgbo" target="_blank" rel="noopener">Get it by email on Medium</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/arijitc629/" target="_blank" rel="noopener">Follow on LinkedIn</a>
+      <a class="btn ghost" href="https://x.com/ArijitC629" target="_blank" rel="noopener">Follow on X</a>
+    </div>
+    <p class="fine">On Medium, press Follow and then the envelope icon beside it. A free Medium account is needed. No account? Use the <a href="https://medium.com/feed/@arijitchakraborty.srccgbo" target="_blank" rel="noopener">RSS feed</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="col">
+    <span>&copy; 2026 Arijit Chakraborty &middot; Bengaluru</span>
+    <span><a href="./">Home</a> &middot; <a href="https://www.linkedin.com/in/arijitc629/" target="_blank" rel="noopener">LinkedIn</a> &middot; <a href="https://x.com/ArijitC629" target="_blank" rel="noopener">X</a> &middot; <a href="https://medium.com/@arijitchakraborty.srccgbo" target="_blank" rel="noopener">Medium</a></span>
+  </div>
+</footer>
+</body>
+</html>

@@ -4,24 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Arijit Chakraborty | Operations leader writing and building with AI</title>
-<meta name="description" content="Operations leader with 11+ years across fintech, e-commerce, logistics and IT services (ex-Amazon, Swiggy, Simpl). Daily notes on AI in operations: metrics that tell the truth, AI guardrails, and plain-file systems.">
+<meta name="description" content="Operations leader with 11+ years across fintech, e-commerce, logistics and IT services (ex-Amazon, Swiggy, Simpl). A weekly note on running operations with AI, with the numbers behind it.">
 <link rel="canonical" href="https://acbizai-star.github.io/arijit-portfolio/">
 <meta name="theme-color" content="#0E1118">
 <meta property="og:type" content="profile">
 <meta property="og:site_name" content="Arijit Chakraborty">
 <meta property="og:title" content="Arijit Chakraborty | Operations leader writing and building with AI">
-<meta property="og:description" content="Operations leader with 11+ years across fintech, e-commerce, logistics and IT services (ex-Amazon, Swiggy, Simpl). Daily notes on AI in operations: metrics that tell the truth, AI guardrails, and plain-file systems.">
+<meta property="og:description" content="Operations leader with 11+ years across fintech, e-commerce, logistics and IT services (ex-Amazon, Swiggy, Simpl). A weekly note on running operations with AI, with the numbers behind it.">
 <meta property="og:url" content="https://acbizai-star.github.io/arijit-portfolio/">
 <meta property="og:image" content="https://acbizai-star.github.io/arijit-portfolio/og-image-v2.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
-<meta property="og:image:alt" content="Arijit Chakraborty: Operations, run with AI. Daily notes on AI in operations.">
+<meta property="og:image:alt" content="Arijit Chakraborty: Operations, run with AI. A weekly note on running operations with AI.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@ArijitC629">
 <meta name="twitter:title" content="Arijit Chakraborty | Operations leader writing and building with AI">
-<meta name="twitter:description" content="Operations leader with 11+ years across fintech, e-commerce, logistics and IT services (ex-Amazon, Swiggy, Simpl). Daily notes on AI in operations: metrics that tell the truth, AI guardrails, and plain-file systems.">
+<meta name="twitter:description" content="Operations leader with 11+ years across fintech, e-commerce, logistics and IT services (ex-Amazon, Swiggy, Simpl). A weekly note on running operations with AI, with the numbers behind it.">
 <meta name="twitter:image" content="https://acbizai-star.github.io/arijit-portfolio/og-image-v2.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Arijit Chakraborty", "url": "https://acbizai-star.github.io/arijit-portfolio/", "jobTitle": "Business Operations & Business Excellence", "alumniOf": "Shri Ram College of Commerce", "address": {"@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN"}, "sameAs": ["https://www.linkedin.com/in/arijitc629/", "https://x.com/ArijitC629"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Arijit Chakraborty", "url": "https://acbizai-star.github.io/arijit-portfolio/", "jobTitle": "Business Operations & Business Excellence", "alumniOf": "Shri Ram College of Commerce", "address": {"@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN"}, "sameAs": ["https://www.linkedin.com/in/arijitc629/", "https://x.com/ArijitC629", "https://medium.com/@arijitchakraborty.srccgbo"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -258,7 +258,20 @@
   .note{ border-left:3px solid var(--brass); padding:4px 0 4px 20px; margin:6px 0 30px; max-width:60ch; }
   .note p{ font-family:'Fraunces',serif; font-style:italic; font-size:18px; line-height:1.55; margin:0 0 8px; color:var(--ink); }
   .note .sig{ font-family:'Fraunces',serif; font-style:italic; font-size:15px; color:var(--brass-ink); }
-  .note .sig::before{ content:"\2014\00a0"; }
+  /* case teasers are links; sign-up band */
+  a.case{ text-decoration:none; color:inherit; transition:border-color .2s; }
+  a.case:hover{ border-color:var(--brass); }
+  .case .case-line{ font-size:14.5px; color:var(--ink-soft); margin:0; }
+  .all-cases{ margin:24px 0 0; }
+  .try{ margin:24px 0 0; padding:12px 16px; background:var(--brass-soft); border-radius:4px; font-size:14.5px; max-width:60ch; }
+  .try b{ display:block; font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--brass-ink); margin-bottom:2px; }
+  .signup{ border-top:1px solid var(--line); background:var(--surface); padding:46px 0 48px; }
+  .signup .eyebrow{ font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--brass-ink); }
+  .signup h2{ font-family:'Fraunces',serif; font-weight:600; font-size:26px; margin:10px 0 8px; text-wrap:balance; }
+  .signup p{ color:var(--ink-soft); max-width:56ch; margin:0 0 18px; font-size:15px; }
+  .signup .nl-row{ display:flex; flex-wrap:wrap; gap:10px; }
+  .signup .fine, .signup .latest{ font-size:13px; margin:14px 0 0; }
+  .signup a:not(.btn){ text-decoration-color:var(--brass); }
   .groups{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
   .group{ border:1px solid var(--line); border-radius:6px; padding:22px 20px; background:var(--surface); box-shadow:var(--shadow); display:flex; flex-direction:column; }
   .group.lead{ border-color:var(--brass); box-shadow:0 1px 2px rgba(20,24,25,.05), 0 16px 40px -20px rgba(156,111,38,.5); }
@@ -269,7 +282,7 @@
   .offers li{ font-size:13.5px; color:var(--ink-soft); padding:9px 0; border-top:1px solid var(--line); line-height:1.5; }
   .offers li b{ color:var(--ink); font-weight:600; }
   .group a{ font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--ink); text-decoration:underline; text-decoration-color:var(--brass); }
-  .steps{ list-style:none; counter-reset:s; padding:0; margin:26px 0 0; display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  .steps{ list-style:none; counter-reset:s; padding:0; margin:26px 0 0; display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
   .steps li{ counter-increment:s; font-size:13.5px; color:var(--ink-soft); padding-top:12px; border-top:3px double var(--line); }
   .steps li::before{ content:"0" counter(s); display:block; font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; color:var(--brass-ink); margin-bottom:6px; }
   .steps li b{ color:var(--ink); }
@@ -284,6 +297,9 @@
     .case .entry-no .n{margin-bottom:0;}
   }
   @media (max-width:680px){
+    nav .col{flex-wrap:wrap; gap:8px;}
+    .navlinks{gap:6px 14px;}
+    .col, .wide{padding:0 16px;}
     h1{font-size:32px;}
     .demo-tiles{grid-template-columns:1fr;}
     .tracks{grid-template-columns:1fr;}
@@ -299,11 +315,13 @@
   <div class="col">
     <span class="wordmark">Arijit Chakraborty</span>
     <div class="navlinks">
+      <a href="case-studies.html">Case studies</a>
       <a href="#career">Career</a>
-      <a href="#work">Work</a>
-      <a href="#demo">Demo</a>
       <a href="#services">Services</a>
+      <a href="#newsletter">Newsletter</a>
       <a href="https://www.linkedin.com/in/arijitc629/" target="_blank" rel="noopener" class="nav-li">LinkedIn</a>
+      <a href="https://x.com/ArijitC629" target="_blank" rel="noopener" class="nav-li">X</a>
+      <a href="https://medium.com/@arijitchakraborty.srccgbo" target="_blank" rel="noopener" class="nav-li">Medium</a>
     </div>
   </div>
 </nav>
@@ -323,61 +341,121 @@
     <circle cx="384" cy="42" r="7" fill="#EAEDE8" opacity=".7"/>
   </svg>
   <div class="wide">
-    <div class="namechip">Arijit Chakraborty &middot; Business Operations</div>
+    <div class="namechip">Amazon quality 96% &rarr; 99% by fixing the audit sample &middot; a 10-minute finance entry now about 3 seconds with AI</div>
     <h1>Operations, <em class="ink">run with AI.<svg class="ink-line" viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true"><path pathLength="100" d="M3 9 C 38 4, 74 12, 112 7 S 172 4, 197 8"/></svg></em></h1>
-    <p class="sub">11+ years across fintech, e-commerce, logistics and IT services. Gross margin and P&amp;L at a global engineering services firm today; Swiggy, Amazon and Simpl before. I build the dashboards myself, with AI, and I mentor people moving into operations and strategy roles.</p>
+    <p class="sub">I worked in operations at Amazon, Swiggy and Simpl. Today I work on gross margin, planning and forecasting at a global engineering services firm and build the AI tools for it myself. I also mentor people moving into operations and strategy roles.</p>
     <div class="cta-row">
-      <a class="btn brass" href="#services">See my services &rarr;</a>
+      <a class="btn brass" href="case-studies.html">Read the case studies &rarr;</a>
+      <a class="btn ghostlite" href="#services">Services</a>
       <a class="btn ghostlite" href="mailto:arijitchakraborty.srccgbo@gmail.com?subject=Hello%20-%20via%20website">Get in touch</a>
     </div>
   </div>
 </header>
 <div class="hproof">
   <div class="wide">
-    <div class="pcell"><div class="v">1.5&times; / &minus;50%</div><div class="l">GMV growth while cutting<br>delinquency &middot; Simpl</div></div>
-    <div class="pcell"><div class="v">7,000/day</div><div class="l">Swiggy Patna, launched from<br>zero in just over 4 months</div></div>
-    <div class="pcell"><div class="v">70&rarr;85%</div><div class="l">Utilisation redesign<br>&middot; Amazon</div></div>
-    <div class="pcell"><div class="v">Global</div><div class="l">Gross margin &amp; P&amp;L<br>&middot; global services firm today</div></div>
+    <div class="pcell"><div class="v">96&rarr;99%</div><div class="l">Quality, by changing<br>the audit sample &middot; Amazon</div></div>
+    <div class="pcell"><div class="v">7,000/day</div><div class="l">A new Swiggy city, from<br>zero in just over 4 months</div></div>
+    <div class="pcell"><div class="v">About &minus;50%</div><div class="l">Late payments, while sales<br>grew 1.5&times; &middot; Simpl</div></div>
+    <div class="pcell"><div class="v">~10 min &rarr; ~3 s</div><div class="l">Per finance document, with<br>every write read back</div></div>
   </div>
 </div>
 
+<section class="block reveal" id="work">
+  <div class="col">
+    <span class="sec-num">01 &middot; Case studies</span>
+    <h2>Five operating problems, with the numbers</h2>
+    <p class="intro">Each case gives the result, the problem and the approach in outline, and a free playbook carries the full method.</p>
+    <div class="cases">
+      <a class="case" href="case-studies.html#audit-sample">
+        <div class="entry-no"><span class="n">01</span>Quality</div>
+        <div>
+          <div class="co">Amazon &middot; 2021 to 2022</div>
+          <h3>The audit sample behind a quality score</h3>
+          <p class="case-line">Before retraining anyone, we checked how the work was sampled for audit.</p>
+          <div class="result">Quality 96% to 99% &middot; utilisation 70% to 85%</div>
+        </div>
+      </a>
+      <a class="case" href="case-studies.html#city-launch">
+        <div class="entry-no"><span class="n">02</span>Launch</div>
+        <div>
+          <div class="co">Swiggy &middot; food delivery, India &middot; 2017 to 2019</div>
+          <h3>A new city, from zero orders to 7,000 a day</h3>
+          <p class="case-line">I planned the setup and expansion from the cost design and staffing the city needed.</p>
+          <div class="result">900+ delivery partners in just over 4 months &middot; cost per delivery &minus;20%</div>
+        </div>
+      </a>
+      <a class="case" href="case-studies.html#collections">
+        <div class="entry-no"><span class="n">03</span>Fintech</div>
+        <div>
+          <div class="co">Simpl &middot; pay-later checkout, India &middot; 2022 to 2025</div>
+          <h3>Late payments down about half while sales grew</h3>
+          <p class="case-line">I worked on late payments with the risk, data science and product teams.</p>
+          <div class="result">Late payments about &minus;50% &middot; sales 1.5&times; &middot; collection cost &minus;20%</div>
+        </div>
+      </a>
+      <a class="case" href="case-studies.html#first-mile">
+        <div class="entry-no"><span class="n">04</span>Logistics</div>
+        <div>
+          <div class="co">Shadowfax &middot; delivery, India &middot; 2022</div>
+          <h3>First-mile parcel scanning, 45 times faster</h3>
+          <p class="case-line">I led the Single Scan project on the first-mile scan. A second saved at this scan repeats on every parcel that goes through it.</p>
+          <div class="result">First-mile scanning 45&times; faster</div>
+        </div>
+      </a>
+      <a class="case" href="case-studies.html#read-back">
+        <div class="entry-no"><span class="n">05</span>AI</div>
+        <div>
+          <div class="co">AI for finance work &middot; today</div>
+          <h3>A 10-minute finance entry, now about 3 seconds</h3>
+          <p class="case-line">Built with Claude. Every write is read back and matched field by field before it counts.</p>
+          <div class="result">About 10 min to about 3 s per document</div>
+        </div>
+      </a>
+    </div>
+    <p class="try"><b>Try this tomorrow (from case 01)</b>Pick the quality number your team watches most and write down which work it samples.</p>
+    <p class="all-cases"><a class="btn primary" href="case-studies.html">Read all five case studies &rarr;</a></p>
+  </div>
+</section>
+
+<hr class="ledger-rule">
+
 <section class="block reveal" id="career">
   <div class="col">
-    <span class="sec-num">01 &middot; Career</span>
-    <h2>Eleven years, one thread</h2>
-    <p class="intro">Fintech, e-commerce, logistics, co-living, IT services. Different industry each time; same job underneath.</p>
+    <span class="sec-num">02 &middot; Career</span>
+    <h2>11+ years across seven industries</h2>
+    <p class="intro">Food delivery, hiring, e-commerce, logistics, fintech, co-living and IT services. I started as a programmer, before the roles below.</p>
     <div class="career">
       <div class="career-row">
-        <div><div class="career-role">Business Operations <span class="co">&middot; Global engineering services firm</span></div><div class="career-line">Gross margin, P&amp;L and leadership reporting across a global services portfolio.</div></div>
-        <div class="career-dates">Feb 2026 &ndash; Present</div>
+        <div><div class="career-role">Business Operations <span class="co">&middot; Global engineering services firm</span></div><div class="career-line">Gross margin, planning and forecasting, with tools I build myself.</div></div>
+        <div class="career-dates">Feb 2026 to now</div>
       </div>
       <div class="career-row">
-        <div><div class="career-role">GM, Operations Head <span class="co">&middot; Stanzaliving</span></div><div class="career-line">250+ FTEs, 70+ properties, &#8377;100 Cr GMV.</div></div>
-        <div class="career-dates">May &ndash; Nov 2025</div>
+        <div><div class="career-role">Operations Head <span class="co">&middot; Stanza Living</span></div><div class="career-line">Ran 70+ properties and 8,500+ beds in co-living.</div></div>
+        <div class="career-dates">May to Nov 2025</div>
       </div>
       <div class="career-row">
-        <div><div class="career-role">Operations &amp; Strategy Advisor <span class="co">&middot; Independent</span></div><div class="career-line">Operating model design and SOPs for early-stage teams.</div></div>
-        <div class="career-dates">May 2024 &ndash; Apr 2025</div>
+        <div><div class="career-role">Operations &amp; Strategy Advisor <span class="co">&middot; Independent</span></div><div class="career-line">Operating models and written procedures for early-stage teams.</div></div>
+        <div class="career-dates">May 2024 to Apr 2025</div>
       </div>
       <div class="career-row">
-        <div><div class="career-role">Operations Lead <span class="co">&middot; Simpl</span></div><div class="career-line">Rebuilt collections &mdash; GMV up 1.5&times;, delinquency down ~50%.</div></div>
-        <div class="career-dates">Dec 2022 &ndash; May 2025</div>
+        <div><div class="career-role">Operations Lead <span class="co">&middot; Simpl</span></div><div class="career-line">Late payments (delinquency) down about 50% while sales (GMV) grew 1.5&times;; collection cost down 20%.</div></div>
+        <div class="career-dates">Dec 2022 to May 2025</div>
       </div>
       <div class="career-row">
-        <div><div class="career-role">Senior Manager <span class="co">&middot; Shadowfax</span></div><div class="career-line">Hyperlocal capacity and last-mile transformation.</div></div>
-        <div class="career-dates">Feb &ndash; Dec 2022</div>
+        <div><div class="career-role">Senior Manager <span class="co">&middot; Shadowfax</span></div><div class="career-line">Led the Single Scan project; first-mile scanning 45&times; faster.</div></div>
+        <div class="career-dates">Feb to Dec 2022</div>
       </div>
       <div class="career-row">
-        <div><div class="career-role">Product Compliance Ops Manager <span class="co">&middot; Amazon</span></div><div class="career-line">Utilisation 70&rarr;85%, quality 96&rarr;99%.</div></div>
-        <div class="career-dates">Apr 2021 &ndash; Feb 2022</div>
+        <div><div class="career-role">Product Compliance Ops Manager <span class="co">&middot; Amazon</span></div><div class="career-line">Quality 96% to 99% and utilisation 70% to 85%, by changing the audit sample.</div></div>
+        <div class="career-dates">Apr 2021 to Feb 2022</div>
       </div>
       <div class="career-row">
-        <div><div class="career-role">Category Manager <span class="co">&middot; OLX People</span></div><div class="career-line">Bulk hiring ops &mdash; 2&times; revenue, new channel launched.</div></div>
-        <div class="career-dates">Jun 2019 &ndash; Apr 2021</div>
+        <div><div class="career-role">Category Manager <span class="co">&middot; OLX People, hiring</span></div><div class="career-line">Bulk hiring operations.</div></div>
+        <div class="career-dates">Jun 2019 to Apr 2021</div>
       </div>
       <div class="career-row">
-        <div><div class="career-role">Area / City Ops Manager <span class="co">&middot; Swiggy</span></div><div class="career-line">Launched Patna from zero to 7,000 orders/day.</div></div>
-        <div class="career-dates">Jun 2017 &ndash; Jun 2019</div>
+        <div><div class="career-role">Area / City Ops Manager <span class="co">&middot; Swiggy</span></div><div class="career-line">Launched Patna from zero to 7,000 orders a day.</div></div>
+        <div class="career-dates">Jun 2017 to Jun 2019</div>
       </div>
     </div>
   </div>
@@ -390,67 +468,15 @@
   </div>
   <div class="creds">
     <span class="c-label">Credentials</span>
-    <span class="c-body">PGD Global Business Operations, SRCC &middot; University of Delhi &nbsp;&middot;&nbsp; B.Tech, Computer Science</span>
+    <span class="c-body">Postgraduate Diploma, Global Business Operations, SRCC, University of Delhi &nbsp;&middot;&nbsp; B.Tech, Computer Science &nbsp;&middot;&nbsp; Lean Six Sigma</span>
   </div>
 </div>
 
-<hr class="ledger-rule">
-
-<section class="block reveal" id="work">
-  <div class="col">
-    <span class="sec-num">02 &middot; Selected work</span>
-    <h2>Three problems, one pattern</h2>
-    <p class="intro">Different industries, same first move: find out what the numbers are actually saying before touching the process.</p>
-    <div class="cases">
-
-      <div class="case">
-        <div class="entry-no"><span class="n">01</span>Fintech / BNPL</div>
-        <div>
-          <div class="co">Simpl</div>
-          <h3>A collections engine losing money on its own recoveries</h3>
-          <div class="case-grid">
-            <span class="tag">Situation</span><span class="val">200+ person collections org, portfolio scope stuck at DPD 90, dormant accounts untouched.</span>
-            <span class="tag">Action</span><span class="val">Re-engineered the recovery workflow, extended scope to DPD 180+, put speech analytics into the call flow, rebuilt the dialer stack for real-time tracking.</span>
-          </div>
-          <div class="result">Result &mdash; GMV up 1.5&times;, delinquency down ~50%, cost per recovery 22&rarr;18 bps</div>
-        </div>
-      </div>
-
-      <div class="case">
-        <div class="entry-no"><span class="n">02</span>Food delivery</div>
-        <div>
-          <div class="co">Swiggy</div>
-          <h3>A city with no delivery operation, at 7,000 orders a day just over four months later</h3>
-          <div class="case-grid">
-            <span class="tag">Situation</span><span class="val">Patna had zero infrastructure &mdash; no fleet, no ops playbook, no local team.</span>
-            <span class="tag">Action</span><span class="val">Built the fleet, dispatch model and city ops team from scratch; later optimised batching and cost-per-delivery across Kolkata's wider network.</span>
-          </div>
-          <div class="result">Result &mdash; 7,000 orders/day in just over 4 months; CPD down ~20% network-wide</div>
-        </div>
-      </div>
-
-      <div class="case">
-        <div class="entry-no"><span class="n">03</span>Compliance</div>
-        <div>
-          <div class="co">Amazon</div>
-          <h3>A quality number nobody had actually audited</h3>
-          <div class="case-grid">
-            <span class="tag">Situation</span><span class="val">Utilisation and quality metrics existed but weren't measuring the right sampling.</span>
-            <span class="tag">Action</span><span class="val">Redesigned the performance-metric framework and the QA audit sampling method itself.</span>
-          </div>
-          <div class="result">Result &mdash; utilisation 70&rarr;85%, quality 96&rarr;99%, recurring issues down 15%</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
 <div class="demo-band" id="demo">
   <div class="col reveal">
-    <span class="sec-num">03 &middot; Built, not claimed</span>
+    <span class="sec-num">03 &middot; A working demo</span>
     <h2>An interactive dashboard, live in your browser</h2>
-    <p class="intro">The kind of operations drill-down I build &mdash; shown here with illustrative sample data only, not from any client or employer. Switch the scenario; the bars recompute.</p>
+    <p class="intro">The kind of operations drill-down I build, on made-up data with no client or employer figures. Switch the scenario and the bars recompute.</p>
 
     <div class="demo-shell">
       <div class="demo-bar">
@@ -467,7 +493,7 @@
           <div class="dt"><div class="l">&Delta; vs plan</div><div class="v up" id="tDelta">+0.0 pt</div></div>
         </div>
         <div class="bars" id="bars"></div>
-        <div class="demo-note">Illustrative sample only &mdash; not from any client or employer.</div>
+        <div class="demo-note">Made-up sample data. No client or employer figures.</div>
       </div>
     </div>
   </div>
@@ -478,66 +504,72 @@
     <span class="sec-num">04 &middot; Services</span>
     <h2>How I can help</h2>
     <div class="note">
-      <p>Most people I have worked with were capable of more than their role asked of them. The work I enjoy most is finding what someone is unusually good at, then building the role, the CV or the operating rhythm around it. Every offer below is that, applied to a different problem.</p>
-      <span class="sig">Arijit</span>
+      <p>For companies, I work on margin, planning and numbers nobody fully trusts. I also mentor people planning their next role.</p>
     </div>
-    <p class="intro">Three kinds of people usually get in touch. Pick yours.</p>
     <div class="groups">
       <div class="group lead">
-        <span class="flag">Start here</span>
-        <div class="k">For individuals</div>
-        <h3>Find your edge, then use it</h3>
+        <div class="k">For companies &amp; founders</div>
+        <h3>Margin, planning and the monthly report</h3>
         <ul class="offers">
-          <li><b>Career strategy &amp; mentorship.</b> One-to-one sessions to work out what you are unusually good at, and plan the next move around it.</li>
-          <li><b>Interview prep for ops &amp; strategy roles.</b> Mock interviews, metric stories and case questions, from someone who has hired for these roles.</li>
-          <li><b>CV &amp; LinkedIn rebuild.</b> The same nine-check method behind my own CV. Every claim sourced, nothing inflated.</li>
+          <li><b>Operations &amp; strategy consulting.</b> Margin reviews, written procedures, planning, and the monthly report your board reads.</li>
+          <li><b>Fractional ops leadership.</b> Part-time or interim, for founders who need the cadence before they can hire for it.</li>
+          <li><b>Dashboards &amp; internal tools.</b> Built once from the source data, with checks that run every month.</li>
         </ul>
-        <a href="mailto:arijitchakraborty.srccgbo@gmail.com?subject=Mentorship%20-%20via%20website">Book a conversation &rarr;</a>
+        <a href="mailto:arijitchakraborty.srccgbo@gmail.com?subject=Consulting%20-%20via%20website">Start a conversation &rarr;</a>
       </div>
       <div class="group">
         <div class="k">For teams &amp; institutions</div>
-        <h3>Teach people to build their own tools</h3>
+        <h3>Your team builds its own dashboards</h3>
         <ul class="offers">
-          <li><b>AI-for-operations workshops.</b> Your team learns to build its own dashboards, trackers and reports with Claude. No engineers needed.</li>
+          <li><b>AI-for-operations workshops.</b> Hands-on sessions with Claude: your trackers and reports, built in the room, without waiting on engineers.</li>
           <li><b>Guest teaching &amp; talks.</b> Business operations, gross margin and cross-industry cases, for business schools and leadership groups.</li>
         </ul>
         <a href="mailto:arijitchakraborty.srccgbo@gmail.com?subject=Workshop%20or%20talk%20-%20via%20website">Plan a session &rarr;</a>
       </div>
       <div class="group">
-        <div class="k">For companies &amp; founders</div>
-        <h3>Fix the operation behind the numbers</h3>
+        <div class="k">For individuals</div>
+        <h3>Plan your next operations or strategy role</h3>
         <ul class="offers">
-          <li><b>Operations &amp; strategy consulting.</b> Diagnostics, margin levers, SOPs, planning and board-ready reporting.</li>
-          <li><b>Fractional ops leadership.</b> Part-time or interim, for founders who need the cadence before they can hire for it.</li>
-          <li><b>Dashboards &amp; internal tools.</b> The report you rebuild by hand every month, built once.</li>
+          <li><b>Career strategy &amp; mentorship.</b> One-to-one sessions: what you are unusually good at, and which roles use it most.</li>
+          <li><b>Interview prep for ops &amp; strategy roles.</b> Mock interviews, metric stories and case questions.</li>
+          <li><b>CV &amp; LinkedIn rebuild.</b> Every line backed by a number you can show.</li>
         </ul>
-        <a href="mailto:arijitchakraborty.srccgbo@gmail.com?subject=Consulting%20-%20via%20website">Start a conversation &rarr;</a>
+        <a href="mailto:arijitchakraborty.srccgbo@gmail.com?subject=Mentorship%20-%20via%20website">Book a conversation &rarr;</a>
       </div>
     </div>
-    <ol class="steps">
-      <li><b>Send one line.</b> Email or WhatsApp, with what you are stuck on.</li>
-      <li><b>I reply in writing.</b> If I am not the right person, I will say so and point you to someone who is.</li>
-      <li><b>You leave with next steps.</b> Whether or not we work together.</li>
-    </ol>
   </div>
 </section>
 
 <div class="cta-band">
   <div class="col">
-    <span class="eyebrow">One line is enough</span>
-    <h2>Tell me the operating problem. I'll tell you how I'd approach it.</h2>
-    <p>Gross margin under pressure, a process that leaks, a city to launch, a dashboard you keep rebuilding by hand &mdash; send a paragraph and I'll reply with a first read.</p>
+    <span class="eyebrow">Contact</span>
+    <h2>What operating problem are you stuck on?</h2>
+    <p>Gross margin under pressure, a process that leaks, a city to launch, a forecast that keeps missing. Send a line or a paragraph by email or WhatsApp. I'll reply in writing with a first read, and if I am not the right person I will say so and point you to someone who is.</p>
     <a class="btn primary" href="mailto:arijitchakraborty.srccgbo@gmail.com?subject=Operating%20problem%20-%20via%20website">Email me &rarr;</a>
     <a class="btn ghost" href="https://wa.me/919650862676?text=Hi%20Arijit%2C%20found%20your%20site%20-" target="_blank" rel="noopener">WhatsApp &rarr;</a>
     <a class="btn ghost" href="https://www.linkedin.com/in/arijitc629/" target="_blank" rel="noopener">LinkedIn &rarr;</a>
     <a class="btn ghost" href="https://github.com/acbizai-star/arijit-portfolio" target="_blank" rel="noopener">View the source &rarr;</a>
   </div>
 </div>
+
+<section class="signup" id="newsletter" aria-labelledby="nl-title">
+  <div class="col">
+    <span class="eyebrow">Newsletter &middot; Read Back</span>
+    <h2 id="nl-title">One operating note a week, with the proof</h2>
+    <p>Each note comes from work I have run and ends with a check you can run in yours. Free, by email through Medium.</p>
+    <div class="nl-row">
+      <a class="btn primary" href="https://medium.com/@arijitchakraborty.srccgbo" target="_blank" rel="noopener">Get it by email on Medium</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/arijitc629/" target="_blank" rel="noopener">Follow on LinkedIn</a>
+      <a class="btn ghost" href="https://x.com/ArijitC629" target="_blank" rel="noopener">Follow on X</a>
+    </div>
+    <p class="fine">On Medium, press Follow and then the envelope icon beside it. A free Medium account is needed. No account? Use the <a href="https://medium.com/feed/@arijitchakraborty.srccgbo" target="_blank" rel="noopener">RSS feed</a>.</p>
+    <p class="latest">Latest: <a href="https://medium.com/@arijitchakraborty.srccgbo/the-audit-sample-that-took-quality-from-96-to-99-and-four-more-checks-for-black-friday-fba3492b9046" target="_blank" rel="noopener">The audit sample that took quality from 96% to 99%, and four more checks for Black Friday</a></p>
+  </div>
+</section>
 </main>
 <footer>
   <div class="col">
-    <span class="sign">Balanced, to the last line.</span>
-    <span class="meta">&copy; 2026 Arijit Chakraborty &middot; Bengaluru &middot; <a href="https://www.linkedin.com/in/arijitc629/" target="_blank" rel="noopener" style="color:var(--ink-soft);text-decoration:underline;text-decoration-color:var(--brass);">LinkedIn</a> &middot; <a href="https://github.com/acbizai-star/arijit-portfolio" target="_blank" rel="noopener" style="color:var(--ink-soft);text-decoration:underline;text-decoration-color:var(--brass);">GitHub</a> &middot; built with Claude</span>
+    <span class="meta">&copy; 2026 Arijit Chakraborty &middot; Bengaluru &middot; <a href="https://www.linkedin.com/in/arijitc629/" target="_blank" rel="noopener" style="color:var(--ink-soft);text-decoration:underline;text-decoration-color:var(--brass);">LinkedIn</a> &middot; <a href="https://x.com/ArijitC629" target="_blank" rel="noopener" style="color:var(--ink-soft);text-decoration:underline;text-decoration-color:var(--brass);">X</a> &middot; <a href="https://medium.com/@arijitchakraborty.srccgbo" target="_blank" rel="noopener" style="color:var(--ink-soft);text-decoration:underline;text-decoration-color:var(--brass);">Medium</a> &middot; <a href="https://github.com/acbizai-star/arijit-portfolio" target="_blank" rel="noopener" style="color:var(--ink-soft);text-decoration:underline;text-decoration-color:var(--brass);">GitHub</a> &middot; built with Claude</span>
   </div>
 </footer>
 
@@ -579,8 +611,8 @@
     } else {
       const target = 11, start = performance.now(), duration = 1000;
       (function tick(now){
-        const p = Math.min(1, (now - start) / duration);
-        const eased = 1 - Math.pow(1 - p, 3);
+        const p = Math.min(1, (now-start) / duration);
+        const eased = 1-Math.pow(1-p, 3);
         heroNum.textContent = Math.round(eased * target) + (p >= 1 ? '+' : '');
         if (p < 1) requestAnimationFrame(tick);
       })(performance.now());
